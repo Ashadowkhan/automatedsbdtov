@@ -27,7 +27,10 @@ jobs:
 
       - name: Setting up ProjectDiscovery tools
         if: steps.cache-go.outputs.cache-hit != 'true'
-
+           env:
+           
+               GO111MODULE: on
+               GOROOT: /opt/hostedtoolcache/go/1.14.15/x64
         run: | 
           go get -v github.com/JoyGhoshs/0install
           go get -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
