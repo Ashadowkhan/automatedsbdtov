@@ -32,8 +32,8 @@ jobs:
               
         run: | 
           go get -v github.com/projectdiscovery/subfinder@upgrade
-          go get -v github.com/projectdiscovery/httpx/tree/main/cmd/httpx
-          go get -v github.com/projectdiscovery/nuclei/tree/main/v2/cmd/nuclei
+          go get -v github.com/projectdiscovery/httpx@upgrade
+          go get -v github.com/projectdiscovery/nuclei@upgrade
           go get -u github.com/tomnomnom/anew
         shell: bash
 
