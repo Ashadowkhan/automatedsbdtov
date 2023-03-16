@@ -40,7 +40,7 @@ jobs:
       - name: Running Scanner
         run: |
           nuclei -update-templates
-          subfinder -silent -dL input/domains.txt -config config/subfinder-config.yaml | anew output/passive_subdomains.txt | httpx -silent | anew output/active_urls.txt | nuclei -silent -t takeovers/ | anew output/nuclei_output.txt
+          subfinder -silent -dL input/domains.txt -config config/subfinder-config.yaml | anew output/passive_subdomains.txt | httpx -silent | anew output/active_urls.txt | nuclei -silent -t takeovers/home/runner/work/_temp/60855ae2-a505-404e-8027-dbd9d6377549.sh | anew output/nuclei_output.txt
         shell: bash
 
       - name: Sorting the output results
