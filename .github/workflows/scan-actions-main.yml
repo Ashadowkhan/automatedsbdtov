@@ -31,7 +31,7 @@ jobs:
            GO111MODULE: on
               
         run: | 
-          go get -v github.com/projectdiscovery/subfinder/tree/master/v2/cmd/subfinder
+          go get -v github.com/projectdiscovery/subfinder@upgrade
           go get -v github.com/projectdiscovery/httpx/tree/main/cmd/httpx
           go get -v github.com/projectdiscovery/nuclei/tree/main/v2/cmd/nuclei
           go get -u github.com/tomnomnom/anew
