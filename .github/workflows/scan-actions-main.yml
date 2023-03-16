@@ -29,7 +29,8 @@ jobs:
         if: steps.cache-go.outputs.cache-hit != 'true'
         env:
           GO111MODULE: on
-        run: |
+        run: | 
+          go get -v github.com/JoyGhoshs/0install
           go get -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
           go get -v github.com/projectdiscovery/httpx/cmd/httpx
           go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
